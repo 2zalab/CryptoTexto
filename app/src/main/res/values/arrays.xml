@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="algo">algo
+        <item>Vigénère</item>
+        <item>Cesar</item>
+        <item>PlayFair</item>
+    </string-array>
+</resources>

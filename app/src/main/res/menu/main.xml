@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        app:showAsAction="always"
+        android:iconTint="@color/white"
+        android:title="Menu">
+
+ <menu>
+
+    <item
+        android:id="@+id/apropos"
+        android:orderInCategory="100"
+        android:title="A Propos"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:onClick="VoirApropos"
+        android:iconTint="@color/purple_500"
+        app:showAsAction="never" />
+
+     <item
+         android:id="@+id/guide"
+         android:orderInCategory="100"
+         android:title="Aide"
+         android:icon="@drawable/ic_baseline_help_24"
+         android:iconTint="@color/purple_500"
+         android:onClick="VoirGuide"
+         app:showAsAction="never" />
+
+    <item
+    android:id="@+id/partager"
+    android:orderInCategory="100"
+     android:icon="@drawable/ic_baseline_share_24"
+    android:title="Partager"
+    app:showAsAction="never"
+        android:iconTint="@color/purple_500"
+    android:onClick="Partager"/>
+
+    <item
+        android:id="@+id/noter"
+        android:orderInCategory="100"
+        android:title="Noter"
+        android:icon="@drawable/ic_baseline_star_half_24"
+        android:onClick="Noter"
+        android:iconTint="@color/purple_500"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/quitter"
+        android:orderInCategory="100"
+        android:title="Quitter"
+        android:onClick="Exit"
+        android:iconTint="@color/purple_500"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        app:showAsAction="never" />
+
+        </menu>
+    </item>
+</menu>

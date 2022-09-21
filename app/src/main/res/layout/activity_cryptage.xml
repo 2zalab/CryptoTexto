@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".CryptageActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CRYPTAGE DU MESSAGE"
+            android:textStyle="bold|italic"
+            android:textColor="@color/purple_500"
+            android:textSize="18dp"
+            android:fontFamily="casual"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/purple_500"
+            />
+    </LinearLayout-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Saisir votre message à crypter"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/intput_cryptage"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/bg_border"
+                        android:gravity="top"
+                        android:padding="5dp"
+                        android:scrollbars="vertical" />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="0dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Choisir l'algorithme de cryptage "
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/algo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:entries="@array/algo" />
+
+                            <!--RadioGroup
+                                android:id="@+id/algo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/Cesar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:checked="false"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="Cesar"/>
+
+                                <RadioButton
+                                    android:id="@+id/Vigenere"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:checked="false"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="Vigénère"/>
+
+                                <RadioButton
+                                    android:id="@+id/FairPlay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:checked="false"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="FairPlay"/>
+
+                            </RadioGroup-->
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clé de cryptage :"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple_500"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/cle_cryptage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_cryptage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_round"
+                    android:text="Lancer le cyptage "
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Le message crypté est :"
+                            android:textColor="@color/black"
+                           android:textSize="16sp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:textStyle="bold" />
+                        <EditText
+                            android:id="@+id/output_cryptage"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@drawable/bg_border"
+                            android:gravity="top"
+                            android:padding="5dp"
+                            android:scrollbars="vertical" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/btn_copy"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/background_round"
+                            android:src="@drawable/ic_baseline_file_copy_24"
+                            app:tint="@color/white" />
+
+                        <ImageButton
+                            android:id="@+id/btn_share"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/background_round"
+                            android:src="@drawable/ic_baseline_share_24"
+                            app:tint="@color/white" />
+
+                        <ImageButton
+                            android:id="@+id/btn_exit"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/background_round"
+                            android:src="@drawable/ic_baseline_cancel_24"
+                            app:tint="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

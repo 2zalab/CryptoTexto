@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Crypto Texto</string>
+    <string name="description">Cette application est utilisée pour le chiffrement et le déchiffrement de vos messages. Elle vous offre la possibilité de partager les messages chiffré via d\'autres applications (Facebook, WhatsApp, SMS, ...)</string>
+</resources>
